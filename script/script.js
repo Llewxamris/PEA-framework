@@ -1,3 +1,5 @@
+HTMLCollection.prototype[Symbol.iterator] = Array.prototype[Symbol.iterator];
+
 document.addEventListener('DOMContentLoaded', () => {
     const navBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
@@ -13,3 +15,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+const para = document.getElementById('mainContainer').getElementsByTagName('p');
+let prevHash = '';
+
+console.log(para);
+
+const peekaboo = (id) => {
+    for (let el of para) {
+        if(el.id === id) {
+            el.classList.remove('hidden');
+        } else {
+            el.classList.add('hidden');
+        }
+    }
+}
+
+setInterval(() => {
+    if (prevHash !== location.hash) {
+        if (location.hash === '#process') {
+            peekaboo('process');
+        }
+        if (location.hash === '#teamEnvironment') {
+            peekaboo('teamEnvironment');
+        }
+        prevHash = location.hash;
+    }
+}, 500);

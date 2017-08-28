@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width" />
         <title></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.css" integrity="sha256-KGzlh3GrZQG1IDswBxp0OXmxeb7h0WezxI8tXeGr3yc=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./style/styles.css" type="text/css">
+    </head>
     <body>
         <!-- Navbar/Header -->
         <nav class="navbar">
@@ -27,8 +29,8 @@
                          Initiation
                         </a>
                         <div class="navbar-dropdown">
-                            <a class="navbar-item">Process</a>
-                            <a class="navbar-item">Team Environment</a>
+                            <a class="navbar-item" href="#process">Process</a>
+                            <a class="navbar-item"i href="#teamEnvironment">Team Environment</a>
                             <a class="navbar-item">Project Management</a>
                         </div>
                     </div>
@@ -62,7 +64,7 @@
         <!-- Start Hero -->
             <div class="hero is-primary is-small is-bold">
                 <div class="hero-body">
-                    <div class="container">
+                                       <div class="container">
                         <h1 class="title">
                             Hello, world!
                         </h1>
@@ -70,13 +72,14 @@
                 </div>
             </div>
         <section class="section">
-            <div class="container">
-                <p>
+            <div class="container" id="mainContainer">
+                <p id="process">
                     Bacon ipsum dolor amet turducken biltong strip steak ham hock, rump tail pig tongue. Boudin beef bacon pork loin meatloaf drumstick kevin meatball. Short loin tongue pork loin pork chop capicola. Short ribs chuck sirloin t-bone pork loin hamburger cupim beef. Short loin pancetta shankle strip steak pig turducken frankfurter, ground round jerky flank tail andouille. Burgdoggen tail frankfurter jerky sirloin cow drumstick short loin short ribs swine. Spare ribs cupim turkey pastrami burgdoggen.
                 </p>
-                <p>
-                    Bacon strip steak picanha sirloin biltong, venison cupim. Ball tip drumstick shoulder andouille frankfurter rump prosciutto pork loin doner pancetta. Hamburger pork chop swine, alcatra boudin t-bone tongue tail ribeye salami tri-tip biltong ham hock. Fatback chicken biltong pork chop picanha sirloin shank burgdoggen shankle venison drumstick corned beef cupim chuck jerky. Pastrami frankfurter spare ribs, ham hock pork t-bone drumstick ground round tail salami. Tail pork loin burgdoggen cow, picanha sirloin salami t-bone ham hock.ody
+                <p id="teamEnvironment" class="hidden">
+                    This is but only a test.
                 </p>
+                <p id="projectManagement" class="hidden">This is also a test, but it is sightly larger.</p>
             </div>
         </section>
         <footer class="footer">
