@@ -1,4 +1,6 @@
 HTMLCollection.prototype[Symbol.iterator] = Array.prototype[Symbol.iterator];
+const para = document.getElementById('mainContainer').getElementsByTagName('p');
+let prevHash = '';
 
 document.addEventListener('DOMContentLoaded', () => {
     const navBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -16,11 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-const para = document.getElementById('mainContainer').getElementsByTagName('p');
-let prevHash = '';
-
-console.log(para);
-
 const peekaboo = (id) => {
     for (let el of para) {
         if(el.id === id) {
@@ -29,16 +26,51 @@ const peekaboo = (id) => {
             el.classList.add('hidden');
         }
     }
-}
+};
 
 setInterval(() => {
+    // I blame Richard Chan for having to make this code chunk
     if (prevHash !== location.hash) {
-        if (location.hash === '#process') {
+        switch (location.hash) {
+        case '#process':
             peekaboo('process');
-        }
-        if (location.hash === '#teamEnvironment') {
+            break;
+        case '#teamEnvironment':
             peekaboo('teamEnvironment');
+            break;
+        case '#projectManagement':
+            peekaboo('projectManagement');
+            break;
+        case '#requirements':
+            peekaboo('requirements');
+            break;
+        case '#analysis':
+            peekaboo('analysis');
+            break;
+        case '#design':
+            peekaboo('design') ;
+            break;
+        case '#implementation':
+            peekaboo('implementation');
+            break;
+        case '#test':
+            peekaboo('test');
+            break;
+        case '#deployment':
+            peekaboo('deployment');
+            break;
+        case '#training':
+            peekaboo('training');
+            break;
+        case '#maintenance':
+            peekaboo('maintenance');
+            break;
+        case '#communications':
+            peekaboo('communications');
+            break;
+        default:
         }
+
         prevHash = location.hash;
     }
-}, 500);
+}, 5);
