@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+document.querySelector('#jumpButton').addEventListener('click', () => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+});
+
 const hideAllExcept = (id) => {
     /* Add the hidden class to all memebers of para except for the one specified
        in the parameter. */
