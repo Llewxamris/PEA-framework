@@ -2,6 +2,7 @@ const para = document.getElementById('mainContainer').getElementsByTagName('p');
 let prevHash = '';
 
 document.addEventListener('DOMContentLoaded', () => {
+    /* Gets the hamburger, and shows/hides the nav on click. */
     const navBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
     if (navBurgers.length != 0) {
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('scroll', () => {
+    /* Shows/hides the jump button based on page position. */
     const jumpBtn = document.querySelector('#jumpButton');
 
     if (window.scrollY > 200) {
@@ -30,6 +32,7 @@ document.addEventListener('scroll', () => {
 });
 
 document.querySelector('#jumpButton').addEventListener('click', () => {
+    /* Jump button functionality. */
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 });
 
