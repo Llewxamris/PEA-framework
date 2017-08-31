@@ -1,4 +1,3 @@
-HTMLCollection.prototype[Symbol.iterator] = Array.prototype[Symbol.iterator];
 const para = document.getElementById('mainContainer').getElementsByTagName('p');
 let prevHash = '';
 
@@ -18,7 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-const peekaboo = (id) => {
+const hideAllExcept = (id) => {
+    /* Add the hidden class to all memebers of para except for the one specified
+       in the parameter. */
+    // Create an iterator for the HTMLCollection collection type. Needed for
+    // the latter `for x of y` loop.
+    HTMLCollection.prototype[Symbol.iterator] = Array.
+        prototype[Symbol.iterator];
+
     for (let el of para) {
         if(el.id === id) {
             el.classList.remove('hidden');
@@ -28,7 +34,8 @@ const peekaboo = (id) => {
     }
 };
 
-const iseeyou = (title, subtitle) => {
+const setTitleSubtitle = (title, subtitle) => {
+    /* Sets the Hero sections tilte and subtitle to those passed in. */
     const t = document.getElementById('hTitle');
     const s = document.getElementById('sTitle');
 
@@ -37,58 +44,64 @@ const iseeyou = (title, subtitle) => {
 };
 
 setInterval(() => {
-    // I blame Richard Chan for having to make this code chunk
+    // I blame Richard Chan for having to make this switch statement.
     if (prevHash !== location.hash) {
         switch (location.hash) {
+        case '#home':
+            hideAllExcept('home');
+            setTitleSubtitle('Home', 'Fun Subtitle!');
+            break;
         case '#process':
-            peekaboo('process');
-            iseeyou('Process', 'Fun Subtitle!');
+            hideAllExcept('process');
+            setTitleSubtitle('Process', 'Fun Subtitle!');
             break;
         case '#teamEnvironment':
-            peekaboo('teamEnvironment');
-            iseeyou('Team Environment', 'Fun Subtitle!');
+            hideAllExcept('teamEnvironment');
+            setTitleSubtitle('Team Environment', 'Fun Subtitle!');
             break;
         case '#projectManagement':
-            peProcessekaboo('projectManagement');
-            iseeyou('Project Management', 'Fun Subtitle!');
+            hideAllExcept('projectManagement');
+            setTitleSubtitle('Project Management', 'Fun Subtitle!');
             break;
         case '#requirements':
-            peekaboo('requirements');
-            iseeyou('Requirements', 'Fun Subtitle!');
+            hideAllExcept('requirements');
+            setTitleSubtitle('Requirements', 'Fun Subtitle!');
             break;
         case '#analysis':
-            peekaboo('analysis');
-            iseeyou('Analysis', 'Fun Subtitle!');
+            hideAllExcept('analysis');
+            setTitleSubtitle('Analysis', 'Fun Subtitle!');
             break;
         case '#design':
-            peekaboo('design') ;
-            iseeyou('Design', 'Fun Subtitle!');
+            hideAllExcept('design') ;
+            setTitleSubtitle('Design', 'Fun Subtitle!');
             break;
         case '#implementation':
-            peekaboo('implementation');
-            iseeyou('Implementation', 'Fun Subtitle!');
+            hideAllExcept('implementation');
+            setTitleSubtitle('Implementation', 'Fun Subtitle!');
             break;
         case '#test':
-            peekaboo('test');
-            iseeyou('Test', 'Fun Subtitle!');
+            hideAllExcept('test');
+            setTitleSubtitle('Test', 'Fun Subtitle!');
             break;
         case '#deployment':
-            peekaboo('deployment');
-            iseeyou('Deployment', 'Fun Subtitle!');
+            hideAllExcept('deployment');
+            setTitleSubtitle('Deployment', 'Fun Subtitle!');
             break;
         case '#training':
-            peekaboo('training');
-            iseeyou('Training', 'Fun Subtitle!');
+            hideAllExcept('training');
+            setTitleSubtitle('Training', 'Fun Subtitle!');
             break;
         case '#maintenance':
-            peekaboo('maintenance');
-            iseeyou('Maintenance', 'Fun Subtitle!');
+            hideAllExcept('maintenance');
+            setTitleSubtitle('Maintenance', 'Fun Subtitle!');
             break;
         case '#communications':
-            peekaboo('communications');
-            iseeyou('Communications', 'Fun Subtitle!');
+            hideAllExcept('communications');
+            setTitleSubtitle('Communications', 'Fun Subtitle!');
             break;
         default:
+            hideAllExcept('404');
+            setTitleSubtitle('404 - Page Not Found!', 'Oh no!');
         }
 
         prevHash = location.hash;
