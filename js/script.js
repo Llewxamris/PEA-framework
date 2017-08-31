@@ -17,6 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+document.addEventListener('scroll', () => {
+    const jumpBtn = document.querySelector('#jumpButton');
+
+    if (window.scrollY > 200) {
+        jumpBtn.classList.add('show');
+        jumpBtn.classList.remove('hide');
+    } else {
+        jumpBtn.classList.add('hide');
+        jumpBtn.classList.remove('show');
+    }
+});
+
 document.querySelector('#jumpButton').addEventListener('click', () => {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 });

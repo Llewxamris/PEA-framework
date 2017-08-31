@@ -19,6 +19,14 @@
     display: none;
 }
 
+.show {
+    transition: opacity 200ms;
+}
+
+.hide {
+    opacity: 0;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
