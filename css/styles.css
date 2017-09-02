@@ -1,3 +1,24 @@
+header {
+    color: white;
+    background-color: #298e42;
+    font-family: 'Noto Sans';
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#hTitle {
+    font-size: 3em;
+}
+
+#sTitle {
+    font-size: 2em;
+}
+
+#mainContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 #personalImage {
     border-radius: 100px;
     animation: fadein 2s;
@@ -13,6 +34,10 @@
     z-index: 9999;
     bottom: 10%;
     right: 10%;
+}
+
+.title {
+ font-size: 2em;
 }
 
 .hidden {
