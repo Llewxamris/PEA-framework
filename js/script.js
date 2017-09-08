@@ -53,74 +53,75 @@ const hideAllExcept = (id) => {
     }
 };
 
-const setTitleSubtitle = (title, subtitle) => {
+const setTitle = (title) => {
     /* Sets the Hero sections tilte and subtitle to those passed in. */
     const t = document.getElementById('hTitle');
-    const s = document.getElementById('sTitle');
 
-    t.innerText = title;
-    s.innerText = subtitle;
+    t.innerHTML = title;
 };
 
 setInterval(() => {
     // I blame Richard Chan for having to make this switch statement.
+    const rightChev = `<span class="icon is-medium"><i class="fa fa-angle-double-right">
+            </i></span>`;
+
     if (prevHash !== location.hash) {
         switch (location.hash) {
         case '#home':
             hideAllExcept('home');
-            setTitleSubtitle('Home', 'Fun Subtitle!');
+            setTitle('Home');
             break;
         case '#process':
             hideAllExcept('process');
-            setTitleSubtitle('Process', 'Fun Subtitle!');
+            setTitle(`Initiation ${rightChev} Process`);
             break;
         case '#teamEnvironment':
             hideAllExcept('teamEnvironment');
-            setTitleSubtitle('Team Environment', 'Fun Subtitle!');
+            setTitle(`Initiation ${rightChev} Team Environment`);
             break;
         case '#projectManagement':
             hideAllExcept('projectManagement');
-            setTitleSubtitle('Project Management', 'Fun Subtitle!');
+            setTitle(`Initiation ${rightChev} Project Management`);
             break;
         case '#requirements':
             hideAllExcept('requirements');
-            setTitleSubtitle('Requirements', 'Fun Subtitle!');
+            setTitle(`Construction ${rightChev} Requirements`);
             break;
         case '#analysis':
             hideAllExcept('analysis');
-            setTitleSubtitle('Analysis', 'Fun Subtitle!');
+            setTitle(`Construction ${rightChev} Analysis`);
             break;
         case '#design':
             hideAllExcept('design') ;
-            setTitleSubtitle('Design', 'Fun Subtitle!');
+            setTitle(`Construction ${rightChev} Design`);
             break;
         case '#implementation':
             hideAllExcept('implementation');
-            setTitleSubtitle('Implementation', 'Fun Subtitle!');
+            setTitle(`Construction ${rightChev} Implementation`);
             break;
         case '#test':
             hideAllExcept('test');
-            setTitleSubtitle('Test', 'Fun Subtitle!');
+            setTitle(`Construction ${rightChev} Test`);
             break;
         case '#deployment':
             hideAllExcept('deployment');
-            setTitleSubtitle('Deployment', 'Fun Subtitle!');
+            setTitle(`Release ${rightChev} Deployment`);
             break;
         case '#training':
             hideAllExcept('training');
-            setTitleSubtitle('Training', 'Fun Subtitle!');
+            setTitle(`Release ${rightChev} Training`);
             break;
         case '#maintenance':
             hideAllExcept('maintenance');
-            setTitleSubtitle('Maintenance', 'Fun Subtitle!');
+            setTitle('Maintenance');
             break;
         case '#communications':
             hideAllExcept('communications');
-            setTitleSubtitle('Communications', 'Fun Subtitle!');
+            setTitle('Communications');
             break;
         default:
             hideAllExcept('404');
-            setTitleSubtitle('404 - Page Not Found!', 'Oh no!');
+            setTitle('404 - Page Not Found!');
         }
 
         prevHash = location.hash;
