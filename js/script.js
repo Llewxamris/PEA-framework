@@ -2,7 +2,7 @@ const para = document.getElementById('mainContainer').getElementsByTagName('p');
 let prevHash = '';
 
 document.addEventListener('DOMContentLoaded', () => {
-    /* Gets the hamburger, and shows/hides the nav on click. */
+    /* Gets the hamburger, and shows the nav on click. */
     const navBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
     if (navBurgers.length != 0) {
@@ -16,6 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+});
+
+document.querySelectorAll('#navMenu').forEach((el) => {
+    /* Closes the hamburger menu. */
+    el.addEventListener('click', () => {
+        el.classList.toggle('is-active');
+    });
 });
 
 document.addEventListener('scroll', () => {
