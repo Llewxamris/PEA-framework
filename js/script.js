@@ -22,6 +22,7 @@ document.querySelectorAll('#navMenu').forEach((el) => {
     /* Closes the hamburger menu. */
     el.addEventListener('click', () => {
         el.classList.toggle('is-active');
+        document.querySelector('.navbar-burger').classList.toggle('is-active');
     });
 });
 
