@@ -47,12 +47,9 @@ document.querySelector('#jumpButton').addEventListener('click', () => {
 const hideAllExcept = (id) => {
     /* Add the hidden class to all memebers of para except for the one specified
        in the parameter. */
-    // Create an iterator for the HTMLCollection collection type. Needed for
-    // the latter `for x of y` loop.
-    HTMLCollection.prototype[Symbol.iterator] = Array.
-        prototype[Symbol.iterator];
+    const pages = document.querySelectorAll('div .page');
 
-    for (let el of para) {
+    for (let el of pages) {
         if(el.id === id) {
             el.classList.remove('hidden');
         } else {
