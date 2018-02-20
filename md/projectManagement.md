@@ -7,7 +7,7 @@ used as a guideline into building our backlog items for TFS.
 These backlog items were places into either our product backlog, or our first
 sprint backlog. The product backlog represents all work items that need to be
 completed before the system is considered completed. Related, the sprint
-backlog are all the work items needed to be completed before the related sprint
+backlog contains all the work items needed to be completed before the related sprint
 is completed. The sprint backlog is created with the client, allowing us to
 prioritize which backlog items we work on for a sprint. This allows us to easily
 filter what work should be done for each sprint.
@@ -29,7 +29,11 @@ valleys means that the sizing of tasks was not done properly, etc.
 
 All hour reporting was done through TFS. This keeps the burndown chart
 up-to-date, and gives the team a centralized location to see their own progress
-as well as the progress of the team.
+as well as the progress of the team. TFS is built into our development
+environment, as well as _Visual Studio_, our IDE. TFS also is set-up to follow
+the _scrum_ methodology, which meant very little tweaking was needed for it to
+meet our needs. These reasons made using TFS over other source-code control
+tools an obvious choice.
 
 [Example Sprint Burndown Chart](./files/mHaley_E42_A04_Sprint1.png)
 

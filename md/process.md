@@ -1,13 +1,13 @@
 # 2. Software Development Process
 
 The development methodology chosen to develop the RAC application for Heritage
-College is Agile. Specifically, the Scrum framework. Agile is a development
-approach that focuses on development teams self-organizing, as well as
+College is Agile using the Scrum framework. Agile is a development
+approach that focuses on communicating within the development teams as well as
 incorporating the customer into the development cycle. It is adaptive, allowing
 the development team to react to changes to the customer’s vision of the
 product. This prevents miscommunication, a lack of understanding of business
-needs, or simply a change in the customers’ needs from halting the project. An
-Agile approach would work these changes into the system without slowing the
+needs, or simply a change in the customers’ needs from delaying the project. An
+Agile approach works these changes into the system without slowing the
 flow of development.
 
 Agile is based on these four values:
@@ -17,13 +17,16 @@ Agile is based on these four values:
 - **Customer Collaboration** over contract negotiation
 - **Responding to Change** over following a plan
 
-That is: Teams should be focusing on collaborating well, rather than being
-loaded with workflows to keep them on check. Teams should be focusing on
-demonstrating a working product, rather than a mound of documentation that can
-easily become obsolete. Teams should include the customer as part of the
-development process, rather than wait until the software is finished before
-receiving feedback. Teams should react to changes as they are requested, rather
-than blocking out a very specific plan.
+Teams should be focusing on the following concepts:
+
+- Collaborating well, rather than being loaded with workflows to keep them on
+    check.
+- Demonstrating a working product, rather than a mound of documentation that can
+    easily become obsolete.
+- Including the customer as part of the development process, rather than wait
+    until the software is finished before receiving feedback. 
+- Reacting to changes as they are requested, rather than blocking out a very
+    specific plan.
 
 Scrum is a framework for agile development that focuses on iterative design
 cycles, and constant inner-team/team-to-customer communication. Scrum begins
@@ -66,7 +69,7 @@ overhead approach was needed. Having the customer available more often meant
 that the customer could dynamically change the features they needed, which came
 in handy when there was miscommunication. The constant team communication also
 meant those who became stuck, or who needed some guidance always had a support
-line. An issue with this methodology was the short sprint cycles. Two weeks
+line. A disadvantage with this methodology was the short sprint cycles. Two weeks
 meant that the team had to juggle testing thoroughly, with being able to
 demonstrate functionality. However, this simply required the team to better
 manage its time, which resulted in a better system overall.
