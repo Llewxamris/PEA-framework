@@ -28,12 +28,6 @@ requests, send requests to content specialist to determine if a candidate is
 qualified for substitution, and other such administrative tasks. This project
 was built between November 2017, and May 2018.
 
-# PEA Project
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
 # 14. Applied Experience
 In order to be eligible for the co-op program for Computer Science, one must
 have:
