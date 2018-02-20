@@ -77,7 +77,106 @@
         <!-- End Hero -->
         <!-- Start Main Content -->
         <section class="section">
-            <div class="container content" id="content"><p>This is a sample page</p></div>
+            <div class="container content" id="content"><h1>5. Requirements</h1>
+
+<h2>Business Problem</h2>
+
+<p>The RAC Application converts the current <em>manual</em> workflow of:</p>
+
+<ol><li>A candidate contacting the RAC advisor</li><li>A candidate receiving the self-assessment form</li><li>A candidate returning the self-assessment form the RAC advisor</li><li>The RAC advisor sending the self-assessment to one, or many content
+specialists</li><li>The content specialist marking the self-assessment</li><li>The content specialists marking being returned to the RAC advisor</li><li>The RAC advisor setting up a physical meeting with the candidate, the
+content specialist, and themselves</li><li>A final decision being made, with the candidate discovering their RAC
+status</li></ol>
+
+<p>Now, the entire system has been moved online. A candidate can fill in, and
+submit their RAC request without needing to communicate with the RAC advisor.
+Their self-assessment, and all related documents, can be sent to assigned
+content specialists. The final document can also be generated, and sent through
+the system. This takes a lot of weight off of the RAC advisors shoulders, and
+makes it easier on the candidate to apply for RAC.</p>
+
+<p><a href="./files/mHaley_RAC_App_Elevator_Pitch.pptx">Elevator pitch for the RAC application</a></p>
+
+<h2>Scope</h2>
+
+<p>The application has three main users:</p>
+
+<ol><li>The <strong>RAC Advisor</strong><ul><li>The admin of the system. They oversee the RAC process, and assist
+candidates. The also assign content specialists portions of a
+candidates self-assessment to be evaluated.</li></ul></li><li>The <strong>Content Specialist</strong><ul><li>An expert who is called upon by the RAC advisor to evaluate a candidates
+self-assessment. They determine if the candidates experience is enough
+to warrant completing the competency.</li></ul></li><li>The <strong>Candidate</strong><ul><li>Someone who is looking into completing a DEC, and wants their work
+experience or possible education to be recognized. Their experience
+can then be substituted instead of a course.</li></ul></li></ol>
+
+<p>The system interfaces with three other systems within the college.</p>
+
+<ol><li>The internal e-mail system</li><li>LDAP</li><li>CSAdmin</li></ol>
+
+<p>LDAP, and CSAdmin are using for authorizing/authenticating the RAC advisor, and
+content specialists internal to the College.</p>
+
+<p>The primary function of the system is to allow candidates to fill out their
+self-assessment entirely via the web. They evaluate themselvs based on competency
+elements, giving themselves either a: <em>"I can do this"</em>, <em>"I can somewhat do this"</em>,
+or <em>"I cannot do this"</em>. The candidate is expected to back up their claims
+with both comments, and by referencing documentation that they can upload.
+After completion, the candidate can submit their self-assessment, and follow
+it's status as it is being evaluated.</p>
+
+<p>Secondary flows include:</p>
+
+<ul><li>Content specialists evaluating the self-assessment</li><li>RAC advisor sending official documents to the candidate</li><li>RAC advisor overriding comments left by the content specialists</li><li>Notifying the RAC advisor if an event occurs that requires their attention</li><li>etc.</li></ul>
+
+<p><a href="./files/mhaley_context_diagram.png">Example context diagram</a></p>
+
+<h2>Business Requirements</h2>
+
+<p>Business requirements are expected functionality as given by the client. They
+these are high level requirements, that must be clearly defined so the
+development team is in total understanding. Business requirements are split
+into two: functional, and non-functional. Functional requirements are <strong><em>what</em> the
+system is expected to do</strong>, while non-functional requirements are <strong><em>how</em> the system
+is expected to work</strong>. Functional requirements may be functionality such as:
+authentication, logging, legal requirements, etc. Non-functional requirements
+may be: performance expectation, user interface requirements, security, etc.
+User stories, and acceptance criteria are used heavily to determine business
+requirements.</p>
+
+<p>An example of a non-functional requirement in the RAC application is a mobile
+friendly UI. The client expects many candidates will be accessing the site via
+their mobile phone, and therefor the site must be usable on any screen size.</p>
+
+<p>The user was included heavily in requirements gathering. Many of the requirements
+were gathered during the initial user meeting, where the client laid out their
+idea for the system. The development team broke down the clients verbal requirements
+into use cases, and user stories. This continued throughout the development
+process, where the client was constantly in touch with our interpretations of
+his requirements, and was able to correct any misinterpretation or give a
+deeper explanation.</p>
+
+<p><a href="./files/meeting-minutes/Sept25_User_Meeting_Meeting_Minutes.docx">Example user meeting notes 1</a></p>
+
+<p><a href="./files/meeting-minutes/Oct16_E50_A09_ProductBacklog_Meeting_Minutes.docx">Example user meeting notes 2</a></p>
+
+<p><a href="./files/meeting-minutes/Dec11_Sprint_Review.docx">Example user meeting notes 3</a></p>
+
+<p><a href="./files/meeting-minutes/Feb9_Sprint_Review_Meeting_Minutes.docx">Example user meeting notes 4</a></p>
+
+<h2>Requirements Model</h2>
+
+<p>An example of a completed user story is:</p>
+
+<blockquote><p>As a candidate, I want to upload documents via the web application, so that I
+can prove my competencies.</p></blockquote>
+
+<p>From a business point of view, the candidate must upload various files that are
+used as proof of experience. The content specialist takes these files in mind
+when evaluating the candidates self-assessment.</p>
+
+<p><a href="./files/mhaley_updoc_acceptance.png">Example acceptance criteria</a></p>
+
+<p><a href="./files/mhaley_updoc_form.png">Screenshot of the completed form</a></p></div>
             <a id="jumpButton" class="button is-primary is-large hidden">
                 <span class="icon">
                     <i class="fa fa-arrow-up"></i>
