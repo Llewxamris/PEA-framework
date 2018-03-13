@@ -75,7 +75,86 @@
         <!-- End Hero -->
         <!-- Start Main Content -->
         <section class="section">
-            <div class="container content" id="content"><p>This is a sample page</p></div>
+            <div class="container content" id="content"><h1>6. Analysis</h1>
+
+<h2>Architectural Technical Analysis</h2>
+
+<p>ASP.NET as our architecture was chosen for us, as that is what the college
+chooses to deploy onto it's servers. Utilizing the <em>Model, View, Controller</em>
+(MVC) approach to our architecture was a quick decision. MVC is more modern,
+allows for greater atomicity, is inherently modular, and made the most sense
+considering a majority of data displayed to the user was going to be retrieved
+from a database. There were few issues with choosing MVC. Getting used to
+combining standard HTML with <em>Razor</em> syntax took some time. As well, calling
+controllers via AJAX requests made it harder to debug code at first. There was
+no proper documentation on <em>where</em> controllers were being called. This was
+fixed by enforcing mandatory comments inside controllers that are called
+exclusively through AJAX request. These comments would lay out the JavaScript
+file containing the call, parameters passed in, and the return value (if any).</p>
+
+<p><em>Entity Framework</em> (EF) was another requirement for our system. There are three
+approaches to EF. <em>Code-first</em>, <em>Model-first</em>, and <em>Database-first</em>.
+Essentially, the team could choose either to define the database via
+manually written classes, define the classes via manually written database
+tables, or define the classes <strong>and</strong> database tables via a manually created
+database model. My original recommendation was <em>code-first</em>, however the team
+settled on <em>model-first</em>. <em>Model-first</em> works well--as it offloads class, and
+database creation to EF. It also made designing classes/databases much more
+of a physical process, which made it easier to describe and evaluate.
+Unfortunately, <em>model-first</em> caused issues. Every change to the model required
+regenerating <strong>both</strong> the classes, and the database. Sometimes, this would
+result in the classes not working the way we expecting, and business logic
+would no longer work. Given the chance, I would of returned to <em>code-first</em>.</p>
+
+<p>Testing was done through extensive Unit Tests, and Acceptance Tests associated
+with backlog items.</p>
+
+<p><a href="./files/mHaley_E50_A08_TechRecommendationReport.docx">Technical Recommendations</a></p>
+
+<h2>Application Analysis</h2>
+
+<p>The RAC Application is 4-tiered. The layers, top-to-bottom, are:</p>
+
+<ol><li>Presentation Layer</li><li>Business Logic Layer</li><li>Data Access Layer</li><li>Data Layer</li></ol>
+
+<p>The <strong>presentation layer</strong> contains all visual aspects of the system. The actual
+interface of the application that is navigated by the user. The <strong>business logic
+layer</strong> contains all logic that parses data going to-and-from the
+database. The <strong>data access layer</strong> is handled by EF. It contains methods to call
+the database and extract specific information. The <strong>data layer</strong> contains our
+database. All layers are physically located inside virtual machines hosted by
+the college.</p>
+
+<h2>Class Diagram</h2>
+
+<p>The initial class diagram was produced based off of the initial client meeting.
+The diagram has changed several times over the course of development, as
+requirements were changed and interpretations were corrected.</p>
+
+<p><a href="./files/rac-diagram-class.png">Final RAC Application Diagram</a></p>
+
+<h2>Statistical Analysis Report</h2>
+
+<p>The statistical analysis was on comparing firearm homicide rates between Canada,
+and the United States. We were given stats compiled from several sources, and
+had to parse through to generate diagrams and tables.</p>
+
+<p><a href="./files/mHaley_stats_pea.docx">Firearm Homicide Statistics Report</a></p>
+
+<h2>Ethical Analysis</h2>
+
+<p>An ethical decision we had to make for the RAC application was the handling of
+private information. Specifically, Protected-B information. Candidate
+documentation has a high chance of containing information that would fall under
+the <em>Protected B</em> status, which contains specific legal requirements for
+handling. Someone getting hold of a citizens <em>Protected B</em> information could
+result in significant personal, or financial harm to that individual. </p>
+
+<p>We dealt with this issue by securing the documents, preventing no other
+candidates from being able to access documents they do not own. We also added
+a mandatory privacy policy to the registration that warns the candidate that
+some of their information is in fact <em>Protected B</em>, and that they are accepting
+the risk of uploading that information.</p></div>
             <a id="jumpButton" class="button is-primary is-large hidden">
                 <span class="icon">
                     <i class="fa fa-arrow-up"></i>
