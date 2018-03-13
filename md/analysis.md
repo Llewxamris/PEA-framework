@@ -19,7 +19,7 @@ Essentially, the team could choose either to define the database via
 manually written classes, define the classes via manually written database
 tables, or define the classes **and** database tables via a manually created
 database model. My original recommendation was _code-first_, however the team
-settled on _model-first_. _Model-first_ works well--as it offloads class, and
+settled on _model-first_. _Model-first_ works well as—it offloads class, and
 database creation to EF. It also made designing classes/databases much more
 of a physical process, which made it easier to describe and evaluate.
 Unfortunately, _model-first_ caused issues. Every change to the model required
@@ -48,17 +48,69 @@ the database and extract specific information. The **data layer** contains our
 database. All layers are physically located inside virtual machines hosted by
 the college.
 
+## Trade-Off Analysis
+Before beginning the development of the application, an analysis was performed
+regarding possible trade-off's that can be decided early on. For example: how
+import was staying on budget? For our project, not at all. There was no budget
+for the RAC application. An applicable trade-off we made was meeting all
+features asked for by the client. Some of the functionality was defined as a
+_nice to have_ as apposed to _need to have_. The team decided on fine tuning
+all _need to have_ features to be as rock-solid as possible. While this means
+some _nice to have_ features did not make it into the final system, in the
+end the core functionality needed by the client was implemented in the best
+way possible. An other thing we decided to trade-off was detailed logging for
+the system. Very few events seemed to necessitate being logged, so the team
+decided implementing a detailed logging system would be unnecessary. Certain
+events are logged—a client beginning a RAC self-assessment, for example—but
+only if they are seen as instrumental to the RAC Advisor doing their job.
+
+[Trade-Off Sliders](./files/mHaley-tradeoff-sliders.png)
+
 ## Class Diagram
 The initial class diagram was produced based off of the initial client meeting.
 The diagram has changed several times over the course of development, as
 requirements were changed and interpretations were corrected.
 
-[Final RAC Application Diagram](./files/rac-diagram-class.png)
+There are three sections to this class diagram:
+
+1. Application Classes
+    - These are classes who's data is populated from the RAC application
+    database. This includes candidates,  uploaded documents, copies of
+    the programs offered, etc.
+2. CSAdmin Classes
+    - Classes brought in from the CSAdmin application. These represents users
+    who are internal to the college, such as the RAC Advisor. A user logging
+    in via CSAdmin can use their school credentials for authorization.
+3. Clara
+    - Classes in Clara are 1:1 maps to Clara's database tables. They contain
+    data pulled from a live, restricted, read-only version of Clara. This data
+    isn't used directly inside the application, instead the data is copied into
+    our local database. This allows us to handle backwards compatibility in
+    case information is removed from Clara.
+
+[Example RAC Application Diagram](./files/rac-class-diagram.png)
 
 ## Statistical Analysis Report
 The statistical analysis was on comparing firearm homicide rates between Canada,
 and the United States. We were given stats compiled from several sources, and
 had to parse through to generate diagrams and tables.
+
+The first set of diagrams used are histograms. They show comparisons of
+firearm and handgun homicides in the United States to those in Canada. These
+charts show that the United States has a far larger amount of homicides,
+homicides by firearm, and homicides by handgun per 1,000,000 people than Canada.
+We also see that in both countries, firearm homicides make up a small portion
+of total homicides.
+
+The second set of diagrams show several five-number summaries tables based off 
+of the dataset. These tables continue to show that—when standardized per
+1,000,000 people—the United States has a far larger issue with firearm based
+homicides than Canada. 
+
+Further plots prove a strong relationship between firearms homicides and total
+homicides, and we finally see that at a 5% significance level we can safely
+reject the notion that firearm homicides are proportional between the two
+countries.
 
 [Firearm Homicide Statistics Report](./files/mHaley_stats_pea.docx)
 
