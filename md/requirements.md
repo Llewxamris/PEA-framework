@@ -22,7 +22,7 @@ content specialists. The final document can also be generated, and sent through
 the system. This takes a lot of weight off of the RAC advisors shoulders, and
 makes it easier on the candidate to apply for RAC.
 
-[Elevator pitch for the RAC application](./files/mHaley_RAC_App_Elevator_Pitch.pptx)
+[Elevator pitch for the RAC application](./files/mhaley_RAC_App_Elevator_Pitch.pptx)
 
 ## Scope
 The application has three main users:

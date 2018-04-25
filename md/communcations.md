@@ -1,7 +1,7 @@
 # 13. Communication
 
 ## Letter of Submission
-[Letter of Submission](./files/mHaley_E42_A08_PEA_Letter)
+[Letter of Submission](./files/mHaley_E42_A08_PEA_Letter.docx)
 
 ## Research Project
 Systems IV had students write and present their research on a topic relevant
