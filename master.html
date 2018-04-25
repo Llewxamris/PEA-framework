@@ -1,107 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html class='has-navbar-fixed-top'>
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>2017/2018 PEA</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.css" integrity="sha256-KGzlh3GrZQG1IDswBxp0OXmxeb7h0WezxI8tXeGr3yc=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./css/styles.css" type="text/css">
-        <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon-16x16.png">
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width' />
+        <title>2017/2018 - PEA</title>
+        <link rel='stylesheet' href='./css/bulma.css' type='text/css' media='all' />
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel='stylesheet' href='./css/styles.css' type='text/css'>
+        <link rel='icon' type='image/png' sizes='32x32' href='./imgs/favicon-32x32.png'>
+        <link rel='icon' type='image/png' sizes='16x16' href='./imgs/favicon-16x16.png'>
     </head>
     <body>
         <!-- Navbar/Header -->
-        <nav class="navbar">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#home">
-                    <img src="./imgs/logo.png" alt="Project Exit Assesment logo">
+        <nav class='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
+            <div class='navbar-brand'>
+                <a class='navbar-item' href='./home.html'>
+                    <img src='./imgs/logo.png' alt='Project Exit Assesment logo'>
                 </a>
-                <div class="navbar-burger burger" data-target="navMenu">
+                <div aria-expanded='false' aria-label='menu' class='navbar-burger' data-target='navMenu' role='button'>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
 
-            <div id="navMenu" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="./home.html">Home</a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
+            <div id='navMenu' class='navbar-menu'>
+                <div class='navbar-start'>
+                    <a class='navbar-item' href='./home.html'>Home</a>
+                    <div class='navbar-item has-dropdown is-hoverable'>
+                        <a class='navbar-link'>
                          Initiation
                         </a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="./process.html">Process</a>
-                            <a class="navbar-item" href="./teamEnvironment.html">Team Environment</a>
-                            <a class="navbar-item" href="./projectManagement.html">Project Management</a>
+                        <div class='navbar-dropdown'>
+                            <a class='navbar-item' href='./process.html'>Process</a>
+                            <a class='navbar-item' href='./teamEnvironment.html'>Team Environment</a>
+                            <a class='navbar-item' href='./projectManagement.html'>Project Management</a>
                         </div>
                     </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
+                    <div class='navbar-item has-dropdown is-hoverable'>
+                        <a class='navbar-link'>
                          Construction
                         </a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="./requirements.html">Requirements</a>
-                            <a class="navbar-item" href="./analysis.html">Analysis</a>
-                            <a class="navbar-item" href="./design.html">Design</a>
-                            <a class="navbar-item" href="./implementation.html">Implementation</a>
-                            <a class="navbar-item" href="./test.html">Test</a>
+                        <div class='navbar-dropdown'>
+                            <a class='navbar-item' href='./requirements.html'>Requirements</a>
+                            <a class='navbar-item' href='./analysis.html'>Analysis</a>
+                            <a class='navbar-item' href='./design.html'>Design</a>
+                            <a class='navbar-item' href='./implementation.html'>Implementation</a>
+                            <a class='navbar-item' href='./test.html'>Test</a>
                         </div>
                     </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Release</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="./deployment.html">Deployment</a>
-                            <a class="navbar-item" href="./training.html">Training</a>
+                    <div class='navbar-item has-dropdown is-hoverable'>
+                        <a class='navbar-link'>Release</a>
+                        <div class='navbar-dropdown'>
+                            <a class='navbar-item' href='./deployment.html'>Deployment</a>
+                            <a class='navbar-item' href='./training.html'>Training</a>
                         </div>
                     </div>
-                    <a class="navbar-item" href="./maintenance.html">Maintenance</a>
-                    <a class="navbar-item" href="./communcations.html">Communications</a>
+                    <a class='navbar-item' href='./maintenance.html'>Maintenance</a>
+                    <a class='navbar-item' href='./communcations.html'>Communications</a>
                 </div>
             </div>
         </nav>
         <!-- End Navbar -->
         <!-- Start Hero -->
-            <div class="hero is-primary is-small">
-                <div class="hero-body">
-                    <div class="container">
-                        <h1 class="title" id='hTitle'></h1>
-                        <h2 class="subtitle">
+            <section class='hero is-primary is-bold'>
+                <div class='hero-body'>
+                    <div class='container'>
+                        <h1 class='title' id='hTitle'>
+                            Home
+                        </h1>
+                        <h2 class='subtitle'>
                             Cégep Heritage College | Computer Science | Maxwell Haley&nbsp;
                             | Program Exit Assesment | 2017/2018
                         </h2>
                     </div>
                 </div>
-            </div>
+            </section>
         <!-- End Hero -->
         <!-- Start Main Content -->
-        <section class="section">
-            <div class="container content" id="content"></div>
-            <a id="jumpButton" class="button is-primary is-large hidden">
-                <span class="icon">
-                    <i class="fa fa-arrow-up"></i>
+        <section class='section'>
+            <div class='container content' id='content'></div>
+            <a id='jumpButton' class='button is-primary is-large hidden'>
+                <span class='icon'>
+                    <i class='fa fa-arrow-up'></i>
                 </span>
             </a>
         </section>
         <!-- End Main Content -->
         <!-- Start Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="content has-text-centered">
-                    <span class="icon">
-                        <i class="fa fa-copyright"></i>
+        <footer class='footer'>
+            <div class='container'>
+                <div class='content has-text-centered'>
+                    <span class='icon'>
+                        <i class='fa fa-copyright'></i>
                     </span>
                     Copyleft 2017 - 2018
-                    <a href="mailto:haley.maxwell@cegep-heritage.qc.ca">Maxwell Haley</a>
+                    <a href='mailto:haley.maxwell@cegep-heritage.qc.ca'>Maxwell Haley</a>
                     ,&nbsp;
-                    <a href="http://www.cegep-heritage.qc.ca/Programs/Computer_Science/index.php">Computer Science</a>
+                    <a href='http://www.cegep-heritage.qc.ca/Programs/Computer_Science/index.php'>Computer Science</a>
                     ,&nbsp;
-                    <a href="http://www.cegep-heritage.qc.ca">Heritage College</a>
+                    <a href='http://www.cegep-heritage.qc.ca'>Heritage College</a>
                     <br />
-                    <a href="https://github.com/Llewxamris/PEA-framework">
-                        <span class="icon">
-                            <i class="fa fa-github"></i>
+                    <a href='https://github.com/Llewxamris/PEA-framework'>
+                        <span class='icon'>
+                            <i class='fa fa-github'></i>
                         </span>
                         &nbsp;This page is licensed under the GPL v3. View the source code on GitHub!
                     </a>
@@ -109,6 +111,6 @@
             </div>
         </footer>
         <!-- End Footer -->
-        <script src="./js/script.js" charset="utf-8"></script>
+        <script src='./js/script.js' charset='utf-8'></script>
     </body>
 </html>
