@@ -1,7 +1,8 @@
-#personalImage {
-    border-radius: 100px;
-    animation: fadein 2s;
-    box-shadow: 0px 5px 10px black;
+a,
+a.navbar-item:hover,
+a.navbar-link:hover,
+.navbar-dropdown a.navbar-item:hover {
+    color: hsl(171, 100%, 41%);
 }
 
 #jumpButton {
@@ -22,6 +23,11 @@
 .hidden {
     display: none;
 }
+
+.navbar-link::after {
+    border-color: hsl(171, 100%, 41%);
+}
+
 
 .show {
     transition: opacity 200ms;
