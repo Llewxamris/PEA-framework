@@ -1,5 +1,9 @@
 # 12. Maintenance
 ## Types of Maintenance Projects
+There are four main types of maintenance projects focused on at Heritage College.
+These are seen as the four biggest types on maintenance available in the
+workforce.
+
 ### Corrective
 Corrective maintenance involves identifying and fixing faults within a piece
 of software. Faults are any issues that prevents the software from operating
@@ -35,7 +39,8 @@ was not written by myself, my team, or anyone still at the college. Learning
 how to inherit a system, how to parse through it, and how to make changes while
 not breaking backwards compatibility. It involved maintaining the CSAdmin system
 at Heritage College. CSAdmin is used by the college to determine which internal
-systems and pages a user is authorized to use.
+systems and pages a user is authorized to use. There is only a single user for
+the CSAdmin system, Allan McDonald.
 
 ## Maintenance Project Modifications
 Refactoring is the concept of re-writing existing code to enhance performance,
@@ -58,7 +63,12 @@ and moving the authorization functionality to some sort of external API.
 ## Maintenance Project Methodology
 The methodology used for the project was _Agile_. We performed five week
 sprints, and performed daily scrums to keep the team up to date. Testing
-was performed during the final two weeks of the sprint.
+was performed during the final two weeks of the sprint. Sprints are cycles
+of iteration performed over a period of a few week to a month. At the end of
+a sprint, a deliverable is shown to the client. The Daily Scrum is a daily
+meeting where members of the team explain what they worked on since the last
+scrum, what they will be working on today, and any issues they might be having.
+The issues are not addressed during the scrum, only brought out into the open.
 
 ## Maintenance Team
 The maintenance team environment was very fluid. Team members were able to
