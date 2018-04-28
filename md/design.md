@@ -105,3 +105,12 @@ chance of collusion between similar data entries.
 The software is split into several layers. The presentation layer, the business
 logic layer, and the database layer. This abstraction is important, as in theory
 each layer could be swapped out, and the application would still function.
+
+## Data Security Plan
+The data security plan outlines security factors associated with the
+RAC Web Application. These factors include authentication, authorization,
+encryption, confidentiality, SSL, backups, privacy, database security,
+protection from path truncation/reverse traversal, protection from XSS and
+SQL injections, and testing security.
+
+[Security Plan](./files/mHaley_E31_L13_DevProject_Security_Plan.docx)
