@@ -11,9 +11,9 @@ involved diving deep into experienced developer experiences with the Kotlin
 language. My recommendation was not to use the Kotlin programming language for
 Android development until Kotlin becomes a driving force in the Android realm.
 
-[Research Paper](./files/mHaley_E42_A04_Research_Final.odt)
+[Research Paper](./files/mHaley_E42_A04_Research_Final.docx)
 
-[Research Presentation](./files/mHaley_E42_A07_Presentation_Final.odp)
+[Research Presentation](./files/mHaley_E42_A07_Presentation_Final.pptx)
 
 ## French Translation
 During the Computer Science program, we had to take two French courses. French
@@ -28,4 +28,4 @@ fulfills.
 
 [System Overview English](./files/mHaley_Team02_A05_Overview.docx)
 
-[System Overview French](./files/mHaley_Team02_A05_Overview_Fr.odt)
+[System Overview French](./files/mHaley_Team02_A05_Overview_Fr.docx)

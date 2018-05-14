@@ -61,7 +61,10 @@ meeting, called a daily scrum, to keep each other up to date on tasks
 completion. Each team member says what they have been working on, what they
 will be working on, and any issues they have in completing their task. By the
 end of the period, the team presents their updated version of the system to the
-customer. Then, the cycle continuous, until the product is completed.
+customer. The team also holds a _sprint retrospective_, where each member goes
+over what went well during the sprint, what did not go well, lessoned learned,
+and anything that's still mysterious about the project. Then, the cycle repeats,
+until the product is completed.
 
 Agile Scrum was an appropriate choice for the RAC project. The team only had a
 period of roughly seven months to develop the system, so an iterative, low
@@ -72,4 +75,6 @@ meant those who became stuck, or who needed some guidance always had a support
 line. A disadvantage with this methodology was the short sprint cycles. Two weeks
 meant that the team had to juggle testing thoroughly, with being able to
 demonstrate functionality. However, this simply required the team to better
-manage its time, which resulted in a better system overall.
+manage its time, which resulted in a better system overall. Lastly, agile
+introduces an aspect of continuous testing. That is, tests are constantly run
+and updated to ensure the quality of the site stays at its peak.
