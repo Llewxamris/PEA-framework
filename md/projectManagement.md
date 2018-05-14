@@ -2,7 +2,8 @@
 
 The initial estimate of the of the project was created after an initial meeting
 with our client. We broke down their requests into several user stories to be
-used as a guideline into building our backlog items for TFS.
+used as a guideline into building our backlog items for _Team Foundation Server_
+(TFS).
 
 These backlog items were places into either our product backlog, or our first
 sprint backlog. The product backlog represents all work items that need to be
@@ -20,7 +21,7 @@ more atomic, more specific.
 
 [Example Product Backlog](./files/mHaley_E42_PEA_A04.xlsx)
 
-After the tasks has been fleshed out, development starts. We tracked out
+After the tasks has been fleshed out, development starts. We tracked our
 development using the provided burndown chart. This chart shows how much work
 is remaining (y-axis), and how much time is remaining in the sprint (x-axis).
 A burndown chart can be used to determine how well we are completing this
@@ -30,10 +31,10 @@ valleys means that the sizing of tasks was not done properly, etc.
 All hour reporting was done through TFS. This keeps the burndown chart
 up-to-date, and gives the team a centralized location to see their own progress
 as well as the progress of the team. TFS is built into our development
-environment, as well as _Visual Studio_, our IDE. TFS also is set-up to follow
-the _scrum_ methodology, which meant very little tweaking was needed for it to
-meet our needs. These reasons made using TFS over other source-code control
-tools an obvious choice.
+environment, as well as _Visual Studio_, our _integrated development environment_.
+TFS also is set-up to follow the _scrum_ methodology, which meant very little
+tweaking was needed for it to meet our needs. These reasons made using TFS over
+other source-code control tools an obvious choice.
 
 [Example Sprint Burndown Chart](./files/mHaley_E42_A04_Sprint1.png)
 
