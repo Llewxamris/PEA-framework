@@ -2,12 +2,12 @@
 
 The work environment for our development project was entirely the _Microsoft_
 workflow for teams. That is: _Visual Studios_ for development, and _Team
-Foundation Server_ for source control. Important documentation was shared
-originally with _Google Drive_, but we moved to using the internal shared drive
-used by the college. The team of consisted of six team members: _Andrew_,
-_Brae_, _Cody_, _Louis_, _Phillip_, and myself. Our project manager was our
-teacher, _Richard Chan_, our technical advisor was another teacher, _Allan
-McDonald_, and our client was _Alain Beauparlant_. Six members was chosen
+Foundation Server_ (TFS) for source control and task tracking. Important 
+documentation was shared originally with _Google Drive_, but we moved to using 
+the internal shared drive used by the college. The team of consisted of six team
+members: _Andrew_, _Brae_, _Cody_, _Louis_, _Phillip_, and myself. Our project 
+manager was our teacher, _Richard Chan_, our technical advisor was another teacher,
+_Allan McDonald_, and our client was _Alain Beauparlant_. Six members was chosen
 because it both means the team is large-enough (too many/little members would cause
 issues), and also because it divides perfectly into the total amount of class
 members. Roles were not officially assigned to each team member, but most
