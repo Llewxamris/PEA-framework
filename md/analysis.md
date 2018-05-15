@@ -1,7 +1,7 @@
 # 6. Analysis
 ## Architectural Technical Analysis
 ASP.NET as our architecture was chosen for us, as that is what the college
-chooses to deploy onto it's servers. Utilizing the _Model, View, Controller_
+chooses to deploy onto its servers. Utilizing the _Model, View, Controller_
 (MVC) approach to our architecture was a quick decision. MVC is more modern,
 allows for greater atomicity, is inherently modular, and made the most sense
 considering a majority of data displayed to the user was going to be retrieved
@@ -48,13 +48,25 @@ the database and extract specific information. The **data layer** contains our
 database. All layers are physically located inside virtual machines hosted by
 the college.
 
+Physically, our system is 3-tiered. The layers, top-to-bottom, are:
+
+1. Rendering Client (Browser)
+2. Application Server
+3. Database Server
+
+The **rendering client** is the browser the user is viewing the website in. The
+presentation of this site is entirely rendered inside their browser. The
+**application server** is a machine running the MVC.NET project via the IIS
+web server. The **database server** is a machine running SQL Server. It contains
+the databases used by our application.
+
 ## Trade-Off Analysis
 Before beginning the development of the application, an analysis was performed
 regarding possible trade-off's that can be decided early on. For example: how
 import was staying on budget? For our project, not at all. There was no budget
 for the RAC application. An applicable trade-off we made was meeting all
 features asked for by the client. Some of the functionality was defined as a
-_nice to have_ as apposed to _need to have_. The team decided on fine tuning
+_nice to have_ as opposed to _need to have_. The team decided on fine tuning
 all _need to have_ features to be as rock-solid as possible. While this means
 some _nice to have_ features did not make it into the final system, in the
 end the core functionality needed by the client was implemented in the best
