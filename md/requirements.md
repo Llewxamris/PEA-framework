@@ -50,7 +50,7 @@ LDAP, and CSAdmin are using for authorizing/authenticating the RAC advisor, and
 content specialists internal to the College.
 
 The primary function of the system is to allow candidates to fill out their
-self-assessment entirely via the web. They evaluate themselvs based on competency
+self-assessment entirely via the web. They evaluate themselves based on competency
 elements, giving themselves either a: _"I can do this"_, _"I can somewhat do this"_,
 or _"I cannot do this"_. The candidate is expected to back up their claims
 with both comments, and by referencing documentation that they can upload.
@@ -64,6 +64,9 @@ Secondary flows include:
 - RAC advisor overriding comments left by the content specialists
 - Notifying the RAC advisor if an event occurs that requires their attention
 - etc.
+
+The following diagram is a _context diagram_. This diagram will provide a high-
+level view of the system and how it interacts with other systems/entities.
 
 [Example context diagram](./files/mhaley_context_diagram.png)
 
