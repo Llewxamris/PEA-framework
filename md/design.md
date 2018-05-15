@@ -24,7 +24,7 @@ The RAC Application interfaces with three databases:
     information is pulled from a restricted, read-only version of Clara. That
     data is then saved inside our local database. This is to ensure backwards
     compatibility in case the data inside Clara changes in a way that would
-    case issues such as old RAC self-assessments no longer reflecting reality.
+    cause issues such as old RAC self-assessments no longer reflecting reality.
 
 ## Physical Data Model
 A physical data model is a visual representation of a database. It contains
@@ -40,7 +40,7 @@ within itself.
 ### Database Analysis
 _Referential Integrity_ could prove to be a pain point for our system,
 specifically in regards to data integrity with Clara. As mentioned above, the
-RAC application needs to handle changes to course information fro Clara. A
+RAC application needs to handle changes to course information from Clara. A
 RAC self-assessment needs to reflect the program as it was the day the
 assessment was started. A RAC Advisor may also need to look at past
 self-assessments. This is handled currently by copying data from Clara to our
@@ -60,7 +60,7 @@ given. This approach is great if the programmer(s) is/are more comfortable
 writing code vs designing a database. However, defining relationships between
 classes can sometimes prove difficult.
 
-- _Model-fist_ is when the developers start by designing a physical data model
+- _Model-first_ is when the developers start by designing a physical data model
 for the application first. _Entity Framework_ takes this model, generating
 both the database **and** the C# classes. This is an extremely _hands off_
 approach, abstracting away a lot of work from the developer. This approach is
@@ -80,7 +80,7 @@ be easier to design a physical model than to define a database with C#, or defin
 C# classes with SQL. However, in the end this proved to be a poor choice.
 _Code-first_ would have been a better decision in the end, as our team consisted
 of much stronger programmers than database designers. Early on, we could of
-used the _Entity Framework_ migration to tool to move to _code-first_.
+used the _Entity Framework_ migration tool to move to _code-first_.
 
 ## Database Access Paths
 The three most important tables in our database are:
@@ -104,7 +104,14 @@ chance of collusion between similar data entries.
 ## System Design Models
 The software is split into several layers. The presentation layer, the business
 logic layer, and the database layer. This abstraction is important, as in theory
-each layer could be swapped out, and the application would still function.
+each layer could be swapped out, and the application would still function. These
+layers are defined partially by the design framwork used for the system called
+_Model, View, Controller_ (MVC). The _Model_ represents the data retrieved
+in the database layer as objects. The _View_ represents the presentation
+layer. The _Controller_ lies between the presentation layer and the business
+logic layer. Typically, it passes data manipulated by the business logic to the _View_ to
+be rendered. The _View_ generates the pages for the presentation layer dynamically
+using the data it recieves from the _Controller_.
 
 ## Data Security Plan
 The data security plan outlines security factors associated with the
