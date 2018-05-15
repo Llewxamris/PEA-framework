@@ -1,8 +1,7 @@
 # 12. Maintenance
 ## Types of Maintenance Projects
 There are four main types of maintenance projects focused on at Heritage College.
-These are seen as the four biggest types on maintenance available in the
-workforce.
+These are seen as the four largest categories of maintenance in the workforce.
 
 ### Corrective
 Corrective maintenance involves identifying and fixing faults within a piece
@@ -18,7 +17,7 @@ the inception of the application. Adaptive is not adding new or up-and-coming
 features, only updating what already exists.
 
 ### Perfective
-Perfective maintenance improves upon the software. Adding changes to bussiness
+Perfective maintenance improves upon the software. Adding changes to business
 requirements given by the clients, or refactoring existing functionality to take
 advantage of new software/technologies. Perfective maintenance is not fixing
 bugs or other issues.
@@ -35,7 +34,7 @@ The maintenance done within the maintenance project in the sixth semester was
 ## Maintenance Project System
 The maintenance project took place during the sixth semester of the program.
 The purpose of the maintenance program is to learn how to work on a system that
-was not written by myself, my team, or anyone still at the college. Learning
+was not written by myself, my team, or anyone still at the college. We learned
 how to inherit a system, how to parse through it, and how to make changes while
 not breaking backwards compatibility. It involved maintaining the CSAdmin system
 at Heritage College. CSAdmin is used by the college to determine which internal
@@ -55,10 +54,7 @@ after the students have verified their class attendance. This changes the
 authorization to match the current student and teacher list. The functionality
 did not work on copying program coordinators, which was a main change we made.
 Other changes requested were a better look-and-feel for the web application,
-and moving the authorization functionality to some sort of external API. The functionality
-did not work on copying program coordinators, which was a main change we made.
-Other changes requested were a better look-and-feel for the web application,
-and moving the authorization functionality to some sort of external API.
+and moving the authorization functionality to some sort of external API. 
 
 ## Maintenance Project Methodology
 The methodology used for the project was _Agile_. We performed five week
